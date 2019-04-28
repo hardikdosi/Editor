@@ -1,0 +1,82 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.cust-container {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.cust-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cust-row-input {
+    margin-top: 380px;
+    padding-top: 10px;
+}
+.cust-row-output {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.label {
+    padding-bottom: 30px;
+}
+
+.modal-header {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.cust-btn {
+    color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.footer, .push {
+    height: 4em;
+}
+
+#editor {
+    position: absolute;
+    top: 130px;
+    right: 200px;
+    bottom: 100px;
+    left: 200px;
+}
+
+.modal {
+    width: 600px;
+}
+
+.cust-text {
+    height: 150px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Welcome!</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div id="header">
+        <nav class="teal lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo"> Panda IDE </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><button id="logout_button" class="waves-effect waves-light btn-flat cust-btn">Logout</button></li>
+                    <li><button id="profile_btn" data-activates="slide_profile" class="waves-effect waves-light btn-flat cust-btn button-collapse">Profile</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul id="slide_profile" class="side-nav"></ul>
+
+    <div class="content">
+        <div class="container">
+            <div class="row cust-row">
+                <div class="col">
+                    <button data-target="open" id="open_button" class="btn waves-effect waves-light modal-trigger">Open</button>
+                </div>
+                <div class="col">
+                    <button data-target="save" id="save_button" class="btn waves-effect waves-light modal-trigger">Save</button>
+                </div>
+                <div class="col">
+                    <button id="compile_button" class="btn waves-effect waves-light">Compile</button>
+                </div>
+                <div class="col right">
+                    <a class='dropdown-button btn' href='#' data-activates='lang'>Language</a>
+                    <ul id='lang' class='dropdown-content'>
+                        <li><a href="#">C</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">C++</a></li>
+                    </ul>
+                </div>
+                <div class="col right">
+                    <a class='dropdown-button btn' href='#' data-activates='theme'>Theme</a>
+                    <ul id='theme' class='dropdown-content'>
+                        <li><a href="#">Monokai</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">XCode</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row cust-row">
+                <div id="editor"></div>
+            </div>
+
+            <div class="cust-row-input">
+                <div class="label"><b> INPUT: </b></div>
+                <textarea id="input_txt_area" class="cust-text" rows="100" cols="50"></textarea>
+            </div>
+            <div class="cust-row-output">
+                <div class="label"><b> RESULT: </b></div>
+                <div class="label"><p id="output_area"></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+
+<div class="footer">
+    <footer class="page-footer teal lighten-1">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright.
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Save Modal -->
+<div id="save" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Enter the File name.</p></div>
+        <div class="input-field row">
+            <input id="save_filename" type="text">
+            <label for="save_filename">File Name</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="file_save" class="modal-action modal-close waves-effect waves-green btn">Submit</button>
+    </div>
+</div>
+
+<!-- Open Modal -->
+<div id="open" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Enter the File name.</p></div>
+        <div class="input-field row">
+            <input id="open_filename" type="text">
+            <label for="open_filename">File Name</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="file_open" class="modal-action modal-close waves-effect waves-green btn">Submit</button>
+    </div>
+</div>
+
+<!--  Scripts-->
+<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/materialize.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

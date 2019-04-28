@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Panda IDE | Online Coding Platform</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div id="header">
+        <nav class="teal lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo"> Panda IDE </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <button data-target="about" class="waves-effect waves-light btn-flat cust-btn modal-trigger">
+                            About
+                        </button>
+                    </li>
+                    <li>
+                        <button data-target="contact" class="waves-effect waves-light btn-flat cust-btn modal-trigger">
+                            Contact Us
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="container cust-container">
+            <div class="row">
+                <div class="col s7 left">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="images/code.jpg">
+                            <span class="card-title">Code Online</span>
+                        </div>
+                        <div class="card-content">
+                            <p> Create an Account and start coding from anywhere.<br/> Save all your codes at one place.<br/>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s5 right">
+                    <div class="card medium white darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Please Log in to your account.</span>
+
+                            <div class="input-field row cust-row">
+                                <div class="col s12">
+                                    <input id="user_name" type="text" class="validate">
+                                    <label for="user_name">User Name</label>
+                                </div>
+                            </div>
+                            <div class="input-field row cust-row">
+                                <div class="col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="label">Forgot Password? Click <a href="#">here.</a></div>
+                            <button id="login_button" class="waves-effect waves-light btn">Log In</button>
+                            <button data-target="register" class="waves-effect waves-light btn right modal-trigger">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Register Modal -->
+<div id="register" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"><p>Please provide the following details.</p></div>
+        <div class="input-field row">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email Id</label>
+        </div>
+
+        <div class="input-field row">
+                <input id="reg_user_name" type="text" class="validate">
+                <label for="reg_user_name">User Name</label>
+        </div>
+
+        <div class="input-field row">
+            <input id="reg_name" type="text" class="validate">
+            <label for="reg_name">Name</label>
+        </div>
+
+        <div class="input-field row">
+                <input id="reg_password" type="password" class="validate">
+                <label for="reg_password">Password</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="register_submit" class="modal-action modal-close waves-effect waves-green btn">Submit</button>
+    </div>
+</div>
+
+<!-- About Modal -->
+<div id="about" class="modal">
+    <div class="modal-content">
+        <p>Online Editor Program.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat right">Go it!</a>
+    </div>
+</div>
+
+<!-- Contact Modal-->
+
+<div id="contact" class="modal">
+    <div class="modal-content">
+        <p>Created by Hardik Dosi.<br/>IIT2013049<br/>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat right">Go it!</a>
+    </div>
+</div>
+
+<div class="push"></div>
+</div>
+
+<div id="footer">
+    <footer class="page-footer teal lighten-1">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright.
+            </div>
+        </div>
+    </footer>
+</div>
+<!--  Scripts-->
+<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/materialize.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

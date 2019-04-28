@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ACE in Action</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            bottom: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="editor">
+    function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+    }
+</div>
+
+<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+    var data = editor.getSession().getValue();
+    console.log(data);
+</script>
+</body>
+</html>
